@@ -9,3 +9,9 @@ if current_day == "saturday" or current_day == "sunday":
   print("its weekend , Enjoy !")
 else:
   print("it's week day so You need to go office")
+
+current_day = (input("Enter the current day: "))
+if current_day.lower() == "saturday" or current_day.upper() == "SUNDAY":
+  print("its weekend , Enjoy !")
+else:
+  print("it's week day so You need to go office")
