@@ -17,8 +17,7 @@ print("Hey", Name, "! Your current balance is", Current_balance + 5000)
 # Sample output:
 #   45 days = 1 month and 15 days"
 
-Days = int(input("Enter Number of days"))
-Number_of_Months = Days / 30
+Days = int(input("Enter Number of days: "))
+Number_of_Months = Days // 30
 Number_of_remainings_days = Days % 30
-print(int(Number_of_Months), "month and", Number_of_remainings_days, "days")
-
+print(Number_of_Months, "month and", Number_of_remainings_days, "days")
