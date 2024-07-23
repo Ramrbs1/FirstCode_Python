@@ -18,34 +18,25 @@ while (True):
   P_choice = input("Enter your Choice: ")
   P_choice = P_choice.lower()
   if P_choice == A_val:
-    print("Game is Tie as System choice is:", A_val, "Player choose: ",
-          P_choice)
-    print("If you want to play more then start the Game Again")
-    break
+    print("Game is Tie as System choice is:", A_val, "Player choose: ",P_choice)
   elif P_choice == "rock" and A_val == "paper":
     print("You loose as System choose:", A_val, "Player choose:", P_choice)
-    print("If you want to play more then start the Game Again")
-    break
   elif P_choice == "paper" and A_val == "rock":
     print("You Win as System choose:", A_val, "Player choose:", P_choice)
-    print("If you want to play more then start the Game Again")
-    break
   elif P_choice == "rock" and A_val == "scissor":
     print("You win as Sytem choose:", A_val, "Player choose:", P_choice)
-    print("If you want to play more then start the Game Again")
-    break
   elif P_choice == "scissor" and A_val == "rock":
     print("You loose as System choose:", A_val, "Player choose:", P_choice)
-    print("If you want to play agin then start the Game ")
-    break
   elif P_choice == "paper" and A_val == "scissor":
     print("You loose as System choose:", A_val, "Player choose:", P_choice)
-    print("If you want to play more then start the Game Again")
-    break
   elif P_choice == "scissor" and A_val == "paper":
     print("You Win as System choose:", A_val, "Player choose:", P_choice)
-    print("If you want to play more then start the Game Again")
-    break
   else:
-    print("You enter Wrong Choice, So quiting the Game")
+    print("You enter Wrong Choice, please Enter rock, paper or scissor")
+    continue
+  user_input = input("Do you want to play more ? y/n")
+  if user_input == 'y':
+    continue
+  else:
+    print("Bye Bye!")
     break

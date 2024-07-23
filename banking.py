@@ -1,4 +1,5 @@
 import random
+
 #emplty lists
 customer_name = []
 account_number = []
@@ -80,6 +81,7 @@ Press 5 for Exit'''+"\n"))
       break
     else:
       continue
+      
   if choice == 2:
     accNumber = int(input("Enter the account details: "))
     GetAccDetails(accNumber)
